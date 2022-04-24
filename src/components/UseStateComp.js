@@ -20,7 +20,15 @@ const UseStateComp = () => {
 
   return (
     <div className="function">
-
+      <h2>Functional Component</h2>
+      <p>Count: {count} </p>
+      <button onClick={increase}> Increase Count</button>
+      <p>Age: {age}</p>
+      <button onClick={increaseAge}> Increase Age</button>
+      <p>Name: {user.name}</p>
+      <p>Age: {user.age}</p>
+      <p>Email: {user.email}</p>
+      <button onClick={updateUser}>Uptade User</button>
     </div>
   )
 }
