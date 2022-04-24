@@ -9,9 +9,9 @@ function App() {
   return (
     <div className="App">
       {/* <h2>LifeCycles</h2> */}
-      <button onClick={() => setIsVisible(!isVisible)}>Toggle Comp</button>
-      {isVisible && <ClassComponent />}
-      {/* <UseStateComp/> */}
+      {/* <button onClick={() => setIsVisible(!isVisible)}>Toggle Comp</button>
+      {isVisible && <ClassComponent />} */}
+      <UseStateComp/>
       {/* <button onClick={() => setIsVisible(!isVisible)}>Toggle Comp</button>
       {isVisible && <UseEffectComp />} */}
       {/* <Users/> */}
