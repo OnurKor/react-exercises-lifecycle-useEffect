@@ -12,10 +12,10 @@ function App() {
       {/* <button onClick={() => setIsVisible(!isVisible)}>Toggle Comp</button>
       {isVisible && <ClassComponent />} */}
       {/* <UseStateComp/> */}
-      <UseEffectComp />
+      {/* <UseEffectComp /> */}
       {/* <button onClick={() => setIsVisible(!isVisible)}>Toggle Comp</button>
       {isVisible && <UseEffectComp />} */}
-      {/* <Users/> */}
+      <Users/>
     </div>
   )
 }
