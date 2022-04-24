@@ -15,14 +15,22 @@ const UseStateComp = () => {
   // const increase = () => setCount(count +1)
   const increase = () => setCount((count) => count + 1) // aynı işlem farklı
   const increaseAge = () => setAge(age + 1)
-  const updateUser = () => setUser({ ...user, name: 'Munir' })
+  const updateUser = () => setUser({ ...user, name: 'Munir', age: "39"})
   console.log(user)
 
   return (
     <div className="function">
-
+      <h2>Functional Component</h2>
+      <p>Count: {count} </p>
+      <button onClick={increase}> Increase Count</button>
+      <p>Age: {age}</p>
+      <button onClick={increaseAge}> Increase Age</button>
+      <p>Name: {user.name}</p>
+      <p>Age: {user.age}</p>
+      <p>Email: {user.email}</p>
+      <button onClick={updateUser}>Uptade User</button>
     </div>
   )
 }
 
-export default UseStateComp
+export default UseStateComp;
