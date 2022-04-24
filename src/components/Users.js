@@ -3,11 +3,21 @@ import axios from 'axios'
 
 const Users = () => {
   const [users, setUsers] = useState([])
+<<<<<<< HEAD
   console.log(users);
  
 
 //* ilk renderda userları çekmek için
   useEffect(() => {
+=======
+  const getUsers = () => {   //  //     fetch('https://jsonplaceholder.typicode.com/users')
+    //       .then((response) => response.json())
+    //       .then((json) => {
+    //         console.log(json)
+    //         setUsers(json)
+    //       })
+    //       .catch((error) => console.log(error))
+>>>>>>> ebc568a70b6ae06c991ffde3ec9e4d3df13dc0fe
     axios
     .get('https://jsonplaceholder.typicode.com/users')
     .then((res) => setUsers(res.data))
