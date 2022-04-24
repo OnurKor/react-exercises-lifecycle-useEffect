@@ -4,7 +4,13 @@ import axios from 'axios'
 const Users = () => {
 
   const [users, setUsers] = useState([])
-  const getUsers = () => {
+  const getUsers = () => {   //  //     fetch('https://jsonplaceholder.typicode.com/users')
+    //       .then((response) => response.json())
+    //       .then((json) => {
+    //         console.log(json)
+    //         setUsers(json)
+    //       })
+    //       .catch((error) => console.log(error))
     axios
     .get('https://jsonplaceholder.typicode.com/users')
     .then((res) => setUsers(res.data))
